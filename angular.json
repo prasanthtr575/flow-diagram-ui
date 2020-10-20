@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "flow-diagram-ui"
+    }
+  },
+  "defaultProject": "flow-diagram-ui",
+  "cli": {
+    "analytics": false
+  }
 }
