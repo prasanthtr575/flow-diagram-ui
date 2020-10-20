@@ -64,10 +64,10 @@ export class FlowDiagramComponent {
     // when setting state here, be sure to set skipsDiagramUpdate: true since GoJS already has this update
     // (since this is a GoJS model changed listener event function)
     // this way, we don't log an unneeded transaction in the Diagram's undoManager history
-    //this.skipsDiagramUpdate = true;
+    this.skipsDiagramUpdate = true;
 
-    //this.diagramNodeData = DataSyncService.syncNodeData(changes, this.diagramNodeData);
-    //this.diagramLinkData = DataSyncService.syncLinkData(changes, this.diagramLinkData);
-    //this.diagramModelData = DataSyncService.syncModelData(changes, this.diagramModelData);
+    this.diagramNodeData = DataSyncService.syncNodeData(changes, this.diagramNodeData);
+    this.diagramLinkData = DataSyncService.syncLinkData(changes, this.diagramLinkData);
+    this.diagramModelData = DataSyncService.syncModelData(changes, this.diagramModelData);
   }
 }
