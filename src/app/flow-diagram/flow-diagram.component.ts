@@ -1,5 +1,5 @@
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { DataSyncService, DiagramComponent } from 'gojs-angular';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { DataSyncService } from 'gojs-angular';
 import * as go from 'gojs';
 
 @Component({

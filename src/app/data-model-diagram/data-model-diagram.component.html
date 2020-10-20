@@ -1,1 +1,6 @@
-<p>data-model-diagram works!</p>
+<div class="data-model-diagram-container" #dataModelDiragram>
+    <gojs-diagram [initDiagram]='initDiagram' [nodeDataArray]='diagramNodeData' [linkDataArray]='diagramLinkData'
+        [modelData]='diagramModelData' [skipsDiagramUpdate]='skipsDiagramUpdate'
+        (modelChange)='diagramModelChange($event)' [divClassName]='diagramDivClassName'>
+    </gojs-diagram>
+</div>

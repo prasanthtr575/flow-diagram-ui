@@ -5,7 +5,7 @@ import { DataModelDiagramComponent } from './data-model-diagram/data-model-diagr
 import { ProcessModelDiagramComponent } from './process-model-diagram/process-model-diagram.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/demo', pathMatch: 'full' },
+  { path: '', redirectTo: '/data-model', pathMatch: 'full' },
   { path: 'demo', component: FlowDiagramComponent },
   { path: 'data-model', component: DataModelDiagramComponent },
   { path: 'process-model', component: ProcessModelDiagramComponent }
